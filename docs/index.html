@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Currículum — Pablo Varela</title>
+  <style>
+    :root{ --accent:#0b67a3; --muted:#6b7280; --card:#ffffff; --bg:#f3f6f9; }
+    html,body{height:100%;}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      margin:0; padding:32px; color:#0f172a;
+      -webkit-font-smoothing:antialiased; -moz-osx-font-smoothing:grayscale;
+    }
+    .container{max-width:900px; margin:0 auto;}
+    .card{background:var(--card); border-radius:12px; box-shadow:0 6px 20px rgba(12,16,23,0.08); padding:28px;}
+    header{display:flex; align-items:center; justify-content:space-between; gap:20px;}
+    .head-left{display:flex; flex-direction:column;}
+    h1{margin:0; font-size:28px; letter-spacing:0.2px}
+    .subtitle{color:var(--muted); margin-top:6px}
+    .buttons{display:flex; gap:10px}
+    a.button{background:var(--accent); color:white; padding:8px 12px; border-radius:8px; text-decoration:none; font-weight:600}
+    section{margin-top:22px}
+    h2{font-size:18px; margin:0 0 10px 0}
+    .experience{display:grid; gap:12px}
+    .job{border-left:3px solid rgba(11,103,163,0.12); padding:12px 14px; background:#fbfdff; border-radius:8px}
+    .job h3{margin:0; font-size:16px}
+    .meta{color:var(--muted); font-size:14px; margin-top:4px}
+    footer{margin-top:26px; color:var(--muted); font-size:13px}
+
+    @media (max-width:640px){
+      header{flex-direction:column; align-items:flex-start}
+      .buttons{width:100%}
+      a.button{width:100%; text-align:center}
+    }
+
+    /* Estilos para imprimir */
+    @media print{
+      body{background:white; padding:0}
+      .card{box-shadow:none; border-radius:0}
+      a.button{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="head-left">
+          <h1>Pablo Varela</h1>
+          <div class="subtitle">Administrador de redes</div>
+        </div>
+        <div class="buttons">
+          <!-- Enlace al PDF (subir CV.pdf al mismo repositorio) -->
+          <a class="button" href="CV Pablo Varela.pdf" target="_blank" rel="noopener">Descargar CV (PDF)</a>
+        </div>
+      </header>
+
+      <section>
+        <h2>Experiencia</h2>
+        <div class="experience">
+          <article class="job">
+            <h3>Administrador de red — Escuela 4-157</h3>
+            <div class="meta">7 años de experiencia</div>
+            <p>Responsable del mantenimiento de la infraestructura de red, configuración de switches y routers, respaldo y soporte a usuarios y gestión de seguridad de la red escolar.</p>
+          </article>
+
+          <article class="job">
+            <h3>Administrador de red — Escuela 4-163</h3>
+            <div class="meta">6 años de experiencia</div>
+            <p>Gestión y monitoreo de redes, resolución de incidentes, actualización de firmware y colaboración con el equipo de TI para optimizar conectividad en entornos educativos.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer>
+        <p>Versión pública — omite firma. Para una versión privada con firma y datos completos, compartila directamente como PDF.</p>
+      </footer>
+    </div>
+  </div>
+</body>
+</html>
